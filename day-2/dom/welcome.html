@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <h2>Welcome</h2>
+    Name : <input type='text' id='uname'/>
+    <p></p>
+    <button onclick='showMessage()'>Wish</button>
+    <h2 id='message' style='color:blue'></h2>
+</body>
+
+<script>
+    function showMessage() {
+        var txtUserName = document.getElementById('uname');
+        var userName = txtUserName.value;
+        // alert('Welcome ' + userName);
+        if (userName.trim() === '')
+            userName = 'Guest';
+        
+        var output = document.getElementById('message');
+        output.innerText = 'welcome ' + userName;
+    }
+</script>
+
+
+</html>

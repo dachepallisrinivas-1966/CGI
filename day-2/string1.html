@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var str = "Srinivas Dachepalli";
+        //         0123456789012345678
+        document.write(str.length + '<br>');
+        document.write(str[0] + '<br>');
+        document.write(str.charAt(1) + '<br>');
+        document.write(str.charCodeAt(0) + '<br>');
+        document.write(str.toUpperCase() + '<br>');
+        document.write(str.toLowerCase() + '<br>');
+        document.write(str.indexOf('l') + '<br>');
+        document.write(str.lastIndexOf('l') + '<br>');
+        document.write(str.substr(2,5) + '<br>');           // substr(startIndexInclusive, NumOfChars)
+        document.write(str.substr(2) + '<br>');             // substr(startIndexInclusive)
+        document.write(str.substring(2,5)+'<br>');                 // substring(startIndexInclusive, endIndexExclusive)
+        
+        var str2 = "  java script   ";
+        document.write(str2 + '<br>');
+        document.write(str2.length + '<br>');
+        document.write(str2.trim().length + '<br>');        // both leading and trailing spaces areremoved
+
+        var str3 = "es";
+        var str4 = "6";
+        var str5 = "- latest javascript";
+        document.write(str3.concat(str4) + '<br>');
+        document.write(str3+str4+str5+ '<br>');
+        document.write(str5.includes('java') + '<br>');
+
+        var str6 = str5.slice(9);
+        document.write(str6 + '<br>');
+        document.write(str5 + '<br>');
+
+        var str7 = "javascript is a client-side scripting language";
+        var str8 = str7.split(' ');
+        for(i=0; i<str8.length; i++) {
+            document.write(str8[i] + '<br>');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

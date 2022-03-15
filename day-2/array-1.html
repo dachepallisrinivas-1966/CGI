@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const names = new Array('Ramesh', 'Geetha', 'Kishore', 10, 2.5);
+        document.write(names + '<br>');
+       
+
+        const languages = ['C', 'C++', 'Python', 'Javascript'];
+        document.write(languages.length + '<br>');
+        languages[5] = 'Ruby';
+
+        document.write(languages + '<br>');
+        document.write(languages.length + '<br>');
+        console.log(languages);
+        console.log(typeof(languages));
+
+        const creators = ['John Resig', 'James Gosling', 'Rod Johnson'];
+        creators.push('Dennis Ritchie');
+        console.log(creators);
+        creators.pop();
+        console.log(creators);
+        creators.unshift('Gavin King');
+        console.log(creators);
+        creators.shift();
+        console.log(creators);
+
+        const sports = ['cricket', 'kabaddi', 'golf', 'foot ball', 'squash'];
+        const sports2 = sports.slice(2);
+        console.log(sports);
+        console.log(sports2);
+
+        const fruits = ['grapes', 'apples', 'mangos', 'bananas', 'straw berry', 'blue berry', 'pomegrenate', 'litchies'];
+        fruits.splice(2, 3);
+        console.log(fruits);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

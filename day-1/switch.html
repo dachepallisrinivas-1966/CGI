@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var a = parseInt(prompt('Enter first number : '));
+        var b = parseInt(prompt('Enter second number : '));
+        var op = prompt('Enter arithmetic operator : ');
+        switch (op) {
+            case '+' : document.write('Sum = ' + (a+b) );
+                       break;
+            case '-' : document.write('Difference = ' + a-b);
+                       break;
+            case '*' : document.write('Product = ' + a*b);
+                       break;
+            case '/' : document.write('Quotient = ' + a/b);
+                       break;
+            case '%' : document.write('Remainder= ' + a%b);
+                       break;
+            default  : document.write('cannot perform ' + op + ' operation');
+                       break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
