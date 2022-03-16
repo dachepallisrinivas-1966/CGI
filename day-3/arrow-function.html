@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function print_name(n) {
+            document.write(n + '<br>');
+        }
+
+        print_name('Srinivas');
+        document.write('<hr>');
+
+        var courses = ['Javascript', 'C#', 'Python','Java'];
+
+        // classic way
+        for(i=0; i<courses.length; i++) {
+            print_name(courses[i]);
+        }
+        document.write('<hr>');
+
+
+        // forEach method - callback method
+        courses.forEach(print_name);
+        document.write('<hr>');
+
+        // using anonymous function
+        courses.forEach(function (c) {
+            document.write(c + '<br>');
+        });
+        document.write('<hr>');
+
+        // arrow function
+        courses.forEach(c => document.write(c + '<br>'));
+        document.write('<hr>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

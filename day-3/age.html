@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function show() {
+            var age, message;
+            var txtAge = document.getElementById('age');
+            var msg = document.getElementById('output');
+            if (txtAge.value.trim() === '') {
+                message = 'age should not be empty';
+                return;
+            } 
+            
+            age = parseInt(txtAge.value);
+
+            if (age < 0 || age > 100) {
+                message = 'invalid age';
+                return;
+            } 
+            
+            if (age < 30) {
+                message = 'young';
+            } else if (age < 60) {
+                message = 'middle aged';
+            } else {
+                message = 'senior citizen';
+            }
+
+            msg.innerHTML = message;
+        }
+    </script>
+
+</head>
+<body>
+    <h2>Person Classification</h2>
+    Age : <input type='text' id='age' />
+    <button onclick='show()'>Show Category</button>
+    <div id='output'></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

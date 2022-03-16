@@ -353,6 +353,126 @@ document.getElementsByClassName(cssClassName)
 document.querySelectorAll(selector)
 
 
+Day-3  (16-mar-2022)
+----------------------------------------------------
+How a javascript program is executed?
+
+						Execution Context
+
+			Memory Allocation Phase				Code Execution Phase
+
+
+Hoisting:
+---------
+It is javascript's default behaviour of moving all declarations to the top of the current scope
+(current script or current function).
+
+
+What is "undefined" and "not defined"?
+
+
+Assignment:
+-----------
+take the system date.
+print if the week day is saturday / sunday - "weekend"
+if the week day is from monday / tuesday = "still beginning of the week"
+otherwise - "mid of the week".
+
+use "switch", not "if".
+
+Assignment:
+-----------
+accept a password.
+check whether the given password is valid or not considering the following ...
+* minimum should be of 6 characters.
+* one upper case character
+* lower case characters are allowed
+* one digit
+* one special symbol - either # or  _ or *.
+
+print "valid password" or "invalid password".
+
+
+									Regular Expressions
+									-------------------
+It is a pattern of characters.
+The pattern is used to do "pattern-matching" functions on the given text.
+
+g 	-	perform a global match
+i 	-	case insensitive match
+m 	-	perform multiline matching
+
+
+									Meta characters
+									---------------
+.	-	finds a single character, except new line or line terminator
+\w	-	find a word character
+\W	-	find a non-word character
+\d 	-	find a digit
+\D	-	find a non-digit character
+\s 	-	find a whitespace character
+\S	-	find a non-whitespace character
+
+									Quantifiers (Occurance indicators)
+									----------------------------------
+n+	-	matches any string that contain atlest one n.
+n*	-	matches any string that contain zero or more occurances of n.
+n?	-	matches any string that contain zero or one occurance of n.
+n{X} -	matches any string that contain sequence of X n's.
+n{X,Y}
+n{X,}
+n$	-	matches any string with n at the end of it
+^n	-	matches any string with n at the beginning of it
+
+
+									methods
+									---------
+exec()		method tests for a match in the string.
+			return a result array if match is found, otherwise return null.
+
+test()		also tests for a match in the string
+			return true/false
+
+
+									ES 6 (ECMASCRIPT 2015)
+									-----------------------
+1. let and const keyword is introduced.
+2. SUGAR syntaxes
+	syntactical enhancements that increase the ease of programming and 
+	offer readability.
+
+	a) multi-line string.
+
+3. default parameters
+	if a parameter is assigned a value in the function definition, 
+	that value is used when the corresponding argument is missing
+	during the function call.
+
+4. template strings	
+	we can insert values of variables inside a string.
+	it is created using backtick (`)
+	it can also have multiple lines
+	it can refer to variables and expressions using ${expr}
+
+5. arrow function
+	arrow functions are shorthand way of defining a function.
+	can be used wherever a normal function is used.
+
+	syntax:
+	-------
+	(params) => statement			
+
+	(params) => {
+		statements;
+	}
+
+
+
+
+									
+
+
+
 
 
 
