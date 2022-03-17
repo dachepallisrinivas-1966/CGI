@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        simpleGreetProvider = function () {
+            return "hello";
+        }
+        // console.log(simpleGreetProvider);
+
+        timelyGreetProvider = function() {
+            greet = '';
+            hour = (new Date()).getHours();
+            if (hour >=3 && hour <= 11)
+                greet = "Good Morning";
+            else if (hour <= 15)
+                greet = "Good Afternoon";
+            else
+                greet = "Good Evening";
+
+            return greet;
+        }
+
+        function greetUser(userName, greetProvider) {
+            return greetProvider() + " " + userName;
+        }
+
+        // passing a function as parameter to another function
+        console.log(greetUser('Srinivas', simpleGreetProvider));
+        console.log(greetUser('Raghu Nandan', timelyGreetProvider));
+
+        // passing anonymous function defintion to another function
+        console.log(greetUser('Deepa', function() {
+           return 'Hai';
+        }));
+
+        // arrow functions 
+        console.log(greetUser('Sreeja', () => 'Namasthey'));
+        console.log(greetUser('Aksheya', () => 'Vanakkam'));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -113,6 +113,8 @@ operators:
 		>		<	==	>=	<=	!=
 +	logical operators		(combining conditions)
 		&&   (and)		||  (or)		!	(not)
++	conditional operator
+		(condition) ? true-statement : false-statement;
 
 
 control structures:
@@ -465,6 +467,102 @@ test()		also tests for a match in the string
 	(params) => {
 		statements;
 	}
+
+
+Day-4  (17-mar-2022)
+----------------------------------------------------
+scope & lexical environment
+
+Functions are called FIRST CLASS CITIZENS.
++	you can store functions in variables.
++	pass them to other functions as arguments
++	and return them from other functions as values.
+
+
+
+scope: 
++	scope means boundary.
++	it represent where we can access a specific variable/function in our class.
++	scope always depend on the lexical environment
+
+lexical environment:
++	It is the local memory + lexical environment of it's parent
+
+	<script>
+        function a() {
+            var b = 10;
+            c();
+            function c() {
+
+            }
+        }
+        a();
+        console.log(b);
+    </script>
+
+'c' is lexically sit inside a() function
+'a' is lexically inside global execution context.
+
+
+IIFE:
+------
+Immediately Invoked Function Expression
+
+block:
+------
+set of statements enclosed within curly braces. { }
+
+let and const are block scoped variables.
+var is a function scoped variable.
+
+
+
+filter(function):
+-----------------
+	to collect elements that are matching with the given predicate in an array.
+
+
+reduce():
+---------
+
+
+
+rest parameters:
+----------------
+it is a parameter that is prefixed with "..." symbol.
+which represent group of parameters.
+
+Assignment:
+-----------
+write a function that takes a list of numbers and return the average of them.
+
+
+spread operator:
+----------------
+it takes an array (or any iterable) and spread it's values.
+
+
+destructuring:
+--------------
+it is also known as destructuring assignment.
+it is a javascript expression that makes it possible to unpack values from arrays, or properties from objects
+into distinct values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
