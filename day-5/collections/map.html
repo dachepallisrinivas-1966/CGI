@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let students = new Map([[1, 'Robert'], [2, 'Mark'], [3, 'Jason']]);
+        students.set(5, 'Jack');
+
+        for(let student of students.entries()) {
+            console.log(student);
+        }
+
+        s = students.get(5);
+        console.log(s);
+
+        students.set(5, 'Srinivas');
+        students.forEach((k,v) => console.log(k + " " + v));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -549,6 +549,113 @@ it is a javascript expression that makes it possible to unpack values from array
 into distinct values.
 
 
+Day-5 (18-Mar-2022)
+-------------------------------------------
+Develop a calculator application.
+
+
+													OOPS
+										(Object Oriented Programming System)
+
+class: 
+------
++	it is a template for objects.
++	define properties and methods.
++	class is simply a definition.
++	no memory is allocated for a class.
+
+syntax:
+-------
+	class    className {
+		constructor() {
+			// code
+		}
+		method() {
+			// code
+		}
+	}
+
+constructor:
+------------
++	it is a special function which is executed automatically whenever an object is created.
++	it is used to initialize properties of an object.
+
+
+object:
+-------
++	it is a variable whose datatype is class
++	memory is allocated only when we create an object for a class.
+
+syntax:
+-------
+	p = new className(arg-1, arg-2, ...);
+
+setters and getters:
+--------------------
++	set method (setter or mutator) is used to modify the property of a class
++	get method (getter or accessor) is used to retrieve the property of a class.
+
+
+static properties:
+------------------
+static properties are used to store common data for a property across all objects.
+
+static methods:
+---------------
++	any method must be invoked (called) using an object.
++	but static method can be invoked directly with the class name.
+
+inheritance:
+------------
++	creating a new class (derived class / sub class) from an existing class (base class / super class)
++	"extends" keyword should be used to create a derived class.
++	derived class can access all the features of base class as well as any extra features that	
+	are added to it.
++	it represent an "is-A" relationship.
++	it is mainly for code reusability.
+
+syntax:
+-------
+	class SubClass extends SuperClass {
+		// code
+	}
+
+
+Collections:
+-------------
+1) Set:
+-------
++	collection of unique values.
+
+methods:
+--------
+a) new Set()
+b) add()
+c) delete()
+d) has()
+e) forEach()
+f) values()
+
+
+2) Map:
+--------
++	it is a collection of key-value pairs.
++	key and value together known as entry.
++	values are accessed using keys.
++	key cannot be duplicated.
+
+methods:
+----------
+a) new Map()
+b) set()
+c) get()
+d) delete()
+e) has()
+f) forEach()
+g) entries()
+
+
+
 
 
 

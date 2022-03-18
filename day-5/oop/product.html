@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class product {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+            print() {
+                console.log(this.name);
+                console.log(this.price);
+                
+            }
+            getSellingPrice() {
+                return this.price * 1.08;   // 8% tax
+            }
+        }
+
+        var p = new product('dell g15 laptop', 100000.0);
+        p.print();
+        console.log(p.getSellingPrice());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

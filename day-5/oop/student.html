@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class student {
+            constructor(rollno, name, fee) {
+                this.rollno = rollno;
+                this.name = name;
+                this.fee = fee;
+            }
+            getRollNo() {
+                return this.rollno;
+            }
+            getName() {
+                return this.name;
+            }
+            getFee() {
+                return this.fee;
+            }
+            setRollNo(rollno) {
+                this.rollno = rollno;
+            }
+            setName(name) {
+                this.name = name;
+            }
+            setFee(fee) {
+                this.fee = fee;
+            }
+        }
+
+        var s1 = new student(1, 'srinivas', 15000);
+        console.log('Roll number = ' + s1.getRollNo());
+        console.log('Name = ' + s1.getName());
+        console.log('Fee = ' + s1.getFee());
+
+        s1.setRollNo(2);
+        s1.setName('ramesh');
+        s1.setFee(16000);
+        console.log('Modified Roll Number = ' + s1.getRollNo());
+        console.log('Modified Name = ' + s1.getName());
+        console.log('Modified Fee = ' + s1.getFee());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

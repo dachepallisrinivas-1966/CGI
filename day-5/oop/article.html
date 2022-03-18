@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class article {
+            static publisher = 'S.Chand & Co';
+
+            constructor(title, date) {
+                this.title = title;
+                this.date = date;
+            }
+
+            static compare(articleA, articleB) {
+                return articleA.date - articleB.date;
+            }
+
+            print() {
+                console.log('Title = ' + this.title);
+                console.log('Date = ' + this.date);
+                console.log('Publisher = ' + article.publisher);
+            }
+        }
+
+        // array of objects
+        let articles = [
+            new article('HTML', new Date(2022, 2, 17)),
+            new article('CSS', new Date(2022, 0, 17)),
+            new article('JavaScript', new Date(2022, 0, 15))
+        ];
+
+        articles.sort(article.compare);
+
+        // console.log(articles);
+        for(let i = 0; i < articles.length; i++) {
+            articles[i].print();
+        }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
